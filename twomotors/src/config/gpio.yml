@@ -1,0 +1,8 @@
+motors:
+  gpio1A: 27
+  gpio1B: 22
+
+servos:
+  gpioA: 17
+
+   
