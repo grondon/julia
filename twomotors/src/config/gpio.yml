@@ -1,6 +1,6 @@
 motors:
-  gpio1A: 27
-  gpio1B: 22
+  gpio1A: 17
+  gpio1B: 27
   gpio2A: 23
   gpio2B: 24
 
