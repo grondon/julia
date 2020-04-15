@@ -8,24 +8,28 @@ from motors.SteeringWheel import SteeringWheel
 class Handler:
 
   def __init__(self,config):
-     self.rearwheel = RearWheelDrive(config["motors"]["gpio1A"],config["motors"]["gpio1B"])
-     self.steeringwheel =  SteeringWheel(config["servos"]["gpioA"])
+     self.rearwheelA = RearWheelDrive(config["motors"]["gpio1A"],config["motors"]["gpio1B"])
+     self.rearwheelB = RearWheelDrive(config["motors"]["gpio2A"],config["motors"]["gpio2B"])
+     #self.steeringwheel =  SteeringWheel(config["servos"]["gpioA"])
 
   def left(self):
-     self.steeringwheel.left()
+     #self.steeringwheel.left()
 
   def right(self):
-     self.steeringwheel.right()
+     #self.steeringwheel.right()
 
   def center(self):
-    self.steeringwheel.center()
+    #self.steeringwheel.center()
 
   def foward(self):
-    self.rearwheel.foward()
+    self.rearwheelA.foward()
+    self.rearwheelB.foward()
 
   def stop(self):
-    self.rearwheel.stop()
+    self.rearwheelA.stop()
+    self.rearwheelB.stop()
 
   def back(self):
-    self.rearwheel.back()
+    self.rearwheelA.back()
+    self.rearwheelB.back()
 
