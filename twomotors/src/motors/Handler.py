@@ -13,12 +13,15 @@ class Handler:
      #self.steeringwheel =  SteeringWheel(config["servos"]["gpioA"])
 
   def left(self):
+     pass
      #self.steeringwheel.left()
 
   def right(self):
+     pass
      #self.steeringwheel.right()
 
   def center(self):
+    pass
     #self.steeringwheel.center()
 
   def foward(self):
